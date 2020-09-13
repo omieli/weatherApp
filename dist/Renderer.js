@@ -6,5 +6,4 @@ class Render {
         $('#container').empty().append(newHTML)
     }
 
-    
 }
