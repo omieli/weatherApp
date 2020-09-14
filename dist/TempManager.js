@@ -22,7 +22,8 @@ class TempManager {
     getCityData = async function (cityName) {
         let info = await $.get(`city/${cityName}`)
         info = JSON.parse(info)
-        const selectedCity = new City (info.name, info.main.temp,info.weather[0].description,info.weather[0].icon)
+        let Celsius =  Math.round(info.main.temp - 273.15)
+        const selectedCity = new City (info.name, Celsius ,info.weather[0].description,info.weather[0].icon)
         this.cityData.push(selectedCity)
     }
 
