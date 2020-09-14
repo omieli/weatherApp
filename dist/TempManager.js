@@ -35,7 +35,7 @@ class TempManager {
             }
         }
     }
-
+fdfdf
     removeCity = function (cityName) {
         $.ajax({
             url: '/city/${cityName}',
