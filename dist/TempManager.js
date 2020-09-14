@@ -1,3 +1,5 @@
+/**MVC - CONTROLLER*/
+
 class City {
     constructor(name, temperature, conditions, icon) {
         this.name = name,

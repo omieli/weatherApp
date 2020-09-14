@@ -10,14 +10,24 @@
     <title>Document</title>
 </head>
 <body>
-
-    
+    <input type="text" placeholder="City">
+    <button>Search</button>
+    <div id='container'></div>
 </body>
-    <script src="../jquery/dist/jquery.js"></script>
-    <script src="../handlebars/dist/handlebars.js"></script>
     <script src="Renderer.js"></script>
     <script src="TempManager.js"></script>
+    <script src="../jquery/dist/jquery.js"></script>
+    <script src="../handlebars/dist/handlebars.js"></script>
     <script src="main.js"></script>
+
     <script id="city-template" type="text/x-handlebars-template">
+        {{#each this}}
+            <div class='city'>
+                <p class='name'>{{ name }}</p>
+                <p class='temp'>{{ temperature }} </p>
+                <p class ='conditions'>{{ conditions }}</p>
+            </div>  
+        {{/each}}
+    </script>
 
 </html>

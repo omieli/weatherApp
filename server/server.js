@@ -16,7 +16,7 @@ app.use(express.static(path.join(__dirname,'..','node_modules')))
 const api = require('./routes/api')
 app.use('/', api)
 
-mongoose.connect('mongodb://localhost/whetherAppDB', { useNewUrlParser: true })
+mongoose.connect('mongodb://localhost/whetherAppDB', { useNewUrlParser: true , useUnifiedTopology: true })
 
 
 
