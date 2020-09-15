@@ -4,7 +4,7 @@ const Schema = mongoose.Schema
 const citySchema = new Schema({
     name: String,
     temperature: String,
-    condition: String,
+    conditions: String,
     conditionPic: String
 })
 

@@ -6,6 +6,7 @@ render.loadPage()
 $('button').on('click', function () {
     let cityInput = $('input').val()
     render.handleSearch(cityInput)
+    render.loadPage()
 })
 
 $('#container').on('click','.addIcon', function () { 
