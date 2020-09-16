@@ -19,4 +19,11 @@ $('#container').on('click','#removeIcon', function () {
     let cityName= $(this).siblings('.title').text()
     tempManager.removeCity(cityName)
     render.loadPage()
+
+    
 })
+
+
+$(document).ready(function(){
+    $('.parallax').parallax();
+  });

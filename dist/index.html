@@ -11,19 +11,25 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    
     <title>Document</title>
 </head>
 
 <body>
-    <div class ="container">
-                <input type="text" placeholder="Search for a city">
-                <a class="waves-effect waves-light btn" id="button"><i class="material-icons right">cloud</i>Search</a>
-            </span>
+    <div class="parallax-container"><div class="parallax"><img src="images/Sky.jpg"></div></div>
+
+        <div class="container">
             
-            <ul class="collection" id ="container">
-                
+            <input type="text" placeholder="Search for a city">
+            <a class="waves-effect waves-light btn" id="button"><i class="material-icons right">cloud</i>Search</a>
+
+            <ul class="collection" id="container">
+
             </ul>
-    </div>
+            
+        </div>
+        <div class="parallax-container"><div class="parallax"><img src="images/beach.jpg"></div></div>
+
 </body>
 
 <script src="Renderer.js"></script>
@@ -31,7 +37,7 @@
 <script src="../jquery/dist/jquery.js"></script>
 <script src="../handlebars/dist/handlebars.js"></script>
 <script src="main.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.js"></script>
 <script id="city-template" type="text/x-handlebars-template">
         {{#each this}}
             <li class="collection-item avatar">
