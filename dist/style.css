@@ -1,0 +1,14 @@
+.secondary-content{
+    cursor: pointer;
+}
+
+.parallax-container {
+    min-height: 50px;
+    line-height: 0;
+    height: fit-content;
+    color: rgba(255,255,255,.9);
+  }
+    .parallax-container .section {
+      width: 100%;
+    }
+  
